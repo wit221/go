@@ -8,7 +8,7 @@ See `examples/**/main.go`. Basic examples:
 
 ## For:
 
-```
+```go
 func main() {
     ctx := context.Background()
 
@@ -36,7 +36,7 @@ func main() {
 
 ## Map:
 
-```
+```go
 func main() {
 	ctx := context.Background()
 
