@@ -8,24 +8,26 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
-const DefaultParallelism = 100
-const DefaultTimeout = 60 * time.Second
+const (
+	DefaultParallelism = 100
+	DefaultTimeout     = 60 * time.Second
+)
 
-type parallelOptions struct {
+type opts struct {
 	parallelism int
 	timeout     time.Duration
 }
 
-type Option func(*parallelOptions)
+type Option func(*opts)
 
 func WithMaxConcurrency(parallelism int) Option {
-	return func(p *parallelOptions) {
+	return func(p *opts) {
 		p.parallelism = parallelism
 	}
 }
 
 func WithTimeout(timeout time.Duration) Option {
-	return func(p *parallelOptions) {
+	return func(p *opts) {
 		p.timeout = timeout
 	}
 }
@@ -42,7 +44,7 @@ func For[T any](
 	fn ForFn[T],
 	options ...Option,
 ) error {
-	opts := parallelOptions{
+	opts := opts{
 		parallelism: DefaultParallelism,
 		timeout:     DefaultTimeout,
 	}
@@ -79,7 +81,7 @@ func Map[T any, T2 any](
 	fn MapFn[T, T2],
 	options ...Option,
 ) ([]T2, error) {
-	opts := parallelOptions{
+	opts := opts{
 		parallelism: DefaultParallelism,
 		timeout:     DefaultTimeout,
 	}
