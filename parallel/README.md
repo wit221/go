@@ -4,7 +4,7 @@ Simple module for one-off fan-out workloads. Akin to C's OpenMP parallelism prag
 
 # Examples
 
-See `example/\*\*/main.go`. Basic examples:
+See `examples/**/main.go`. Basic examples:
 
 ## For:
 
