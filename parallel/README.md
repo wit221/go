@@ -2,6 +2,9 @@
 
 Simple module for one-off fan-out workloads. Akin to C's OpenMP parallelism pragmas.
 
+# Install
+`go get github.com/wit221/go/parallel`
+
 # Examples
 
 See `examples/**/main.go`. Basic examples:
