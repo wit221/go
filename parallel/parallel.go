@@ -54,11 +54,9 @@ func For[T any](
 	ctx, cancel := context.WithTimeout(ctx, opts.timeout)
 	defer cancel()
 
-	// Create an errGroup.
 	errGroup, ctx := errgroup.WithContext(ctx)
 	errGroup.SetLimit(opts.parallelism)
 
-	// Add to that group for as long as there are items or up to parallelism
 	for _, item := range items {
 		item := item
 		errGroup.Go(func() error {
@@ -93,13 +91,10 @@ func Map[T any, T2 any](
 	ctx, cancel := context.WithTimeout(ctx, opts.timeout)
 	defer cancel()
 
-	// Create an errGroup.
 	errGroup, ctx := errgroup.WithContext(ctx)
 	errGroup.SetLimit(opts.parallelism)
 
-	res := make([]T2, 0, len(items))
-
-	// Add to that group for as long as there are items or up to parallelism
+	res := make([]T2, len(items))
 	for i, item := range items {
 		i := i
 		item := item

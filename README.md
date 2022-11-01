@@ -1,1 +1,1 @@
-Set of go utilities.
+Set of go utilities. PRs welcome.
