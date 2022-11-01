@@ -1,0 +1,10 @@
+github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+github.com/samsarahq/go/oops v0.0.0-20220211150445-4b291d6feac4 h1:RJW+9LWWckBjKbaORaHFOBSLSBGfdQw7u4l2C9jPVJY=
+github.com/samsarahq/go/oops v0.0.0-20220211150445-4b291d6feac4/go.mod h1:9zcuZD3ZC3m3i7GjzNwvvy/LSpj6nT/uOa6f2OdUUzo=
+github.com/spkg/slog v0.0.0-20170106002133-4d8b9e4f01ed h1:v35mWwqmWjCZeA1KJ3yBiawNvHlgCk928XW32MYKpDM=
+github.com/spkg/slog v0.0.0-20170106002133-4d8b9e4f01ed/go.mod h1:7rERTU/QtG1Uk0HdtfyW2/3fXG35rHxRy2wiaRcaFIU=
+github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
+golang.org/x/net v0.1.0 h1:hZ/3BUoy5aId7sCpA/Tc5lt8DkFgdVS2onTpJsZ/fl0=
+golang.org/x/net v0.1.0/go.mod h1:Cx3nUiGt4eDBEyega/BKRp+/AlGL8hYe7U9odMt2Cco=
+gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c h1:dUUwHk2QECo/6vqA44rthZ8ie2QXMNeKRTHCNY2nXvo=
