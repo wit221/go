@@ -52,7 +52,7 @@ func main() {
 
 	fmt.Println("Run 2 start. Should take 6 seconds since we have 4 items, 2 parallelism, and each takes 3 seconds")
 	delay = NewPtr(3 * time.Second)
-	res, err = parallel.Map(ctx, items, workFn, parallel.WithMaxConcurrency(2))
+	res, err = parallel.Map(ctx, items, workFn, parallel.WithParallelism(2))
 	fmt.Println(err)
 	for _, item := range res {
 		fmt.Println(item)

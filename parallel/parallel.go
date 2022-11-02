@@ -20,7 +20,7 @@ type opts struct {
 
 type Option func(*opts)
 
-func WithMaxConcurrency(parallelism int) Option {
+func WithParallelism(parallelism int) Option {
 	return func(p *opts) {
 		p.parallelism = parallelism
 	}
